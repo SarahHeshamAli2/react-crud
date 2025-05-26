@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    body {
+  font-family: "Tuffy", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    }      
+      input.form-control {
+        border: none;
+        border-bottom: 2px solid rgba(219, 219, 219, 0.77);
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        outline: none;
+        transition: border-color 0.3s ease;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      input.form-control:focus {
+        border-bottom-color: unset;
+        box-shadow: unset;
+        outline: none;
+      }
+
+      .w-lg-50 {
+  width: 100%; 
+}
+
+@media (min-width: 992px) { 
+  .w-lg-50 {
+    width: 50%;
+  }
+}
+
+.card-hover-animate {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card-hover-animate:hover {
+  transform: scale(1.03);
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
